@@ -33,7 +33,7 @@ sudo pip3 install mpi4py
 
 # Command to run the code
 
-mpirun -np 25 --hostfile hosts python3 mult.py 24 20 960 50000 960 RS 2 name
+mpirun -np 25 --hostfile hosts python mult.py 24 20 960 50000 960 RS 2 name
 
 This is the command to run the experiment when the total number of servers = 25 (1 master, 24 workers), n = 24, k = 20, matrix1 size = 960 * 50000, matrix2 size = 50000 * 960, coding scheme is RS code, nof4 = 2, name = name.
 
