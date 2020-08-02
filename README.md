@@ -38,3 +38,9 @@ mpirun -np 25 --hostfile hosts python3 mult.py 24 20 960 50000 960 RS 2 name
 This is the command to run the experiment when the total number of servers = 25 (1 master, 24 workers), n = 24, k = 20, matrix1 size = 960 * 50000, matrix2 size = 50000 * 960, coding scheme is RS code, nof4 = 2, name = name.
 
 For the coding scheme, you have the option of RS, SP1, SP2, GLO
+
+To run the command successfully, you need to make sure every master and worker have the files needed. 
+
+After that, You will need to place the master's IP address at the first line of the 'hosts' file, and place the workers' IP addresses line by line after the master.
+
+At last, execute the command in the master.
